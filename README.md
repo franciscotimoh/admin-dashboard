@@ -9,3 +9,6 @@ Icons from Material Design Icons: https://pictogrammers.com/library/mdi/
 Profile picture characters from SpyxFamily by Tatsuya Endo
 
 All rights reserved to respective owners
+
+
+Note-to-self: revisit to add truncation of content in smaller screens
