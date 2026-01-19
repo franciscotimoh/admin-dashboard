@@ -8,7 +8,12 @@ html {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+html, body {
+    height: 100%;
+}
+
 .container {
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
@@ -164,4 +169,99 @@ li > img {
 /* dashboard */
 .dashboard {
     background-color: #E2E8F0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.projects {
+    grid-row: 1 / 3;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.subtitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-left: 0.5rem solid #F0B42A;
+    border-radius: 0.5rem;
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.content {
+    font-size: 0.8rem;
+    color: #636363; 
+}
+
+.actions {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.actions > img {
+    height: 1.125rem;
+    width: auto;
+}
+
+.panel {
+    background-color: #FFFFFF;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid #D3D3D3;
+    flex: 1;
+}
+
+.announcement:last-child {
+    border: none;
+}
+
+.announcement .heading {
+    font-size: 0.8rem;
+}
+
+.announcement .content {
+    font-size: 0.6rem;
+}
+
+.trends {
+    gap: 1rem;
+}
+
+.trend {
+    font-size: 0.75rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.projectTitle {
+    color: #747474;
 }
