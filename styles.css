@@ -15,8 +15,8 @@ html, body {
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 200px minmax(600px, 1fr);
 }
 
 /* header */
@@ -29,6 +29,7 @@ html, body {
     justify-content: space-between;
     margin: 1.25rem 2rem;
     align-items: center;
+    gap: 4rem;
 }
 
 .searchIcon {
@@ -39,6 +40,7 @@ html, body {
 .search {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 1rem;
 }
 
@@ -48,9 +50,8 @@ html, body {
     border-radius: 1rem;
     padding-left: 10px;
     height: 1.5rem;
-    /*
-    TODO: change the length to minmax 
-    */
+    flex: 1;
+    min-width: 0;
 }
 
 .personal {
@@ -178,9 +179,12 @@ li > img {
 
 .projects {
     grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .projectsContainer {
+    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -223,6 +227,11 @@ li > img {
     width: auto;
 }
 
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
+
 .panel {
     background-color: #FFFFFF;
     border-radius: 0.5rem;
@@ -232,12 +241,12 @@ li > img {
 .panel {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .announcement {
     padding: 0.8rem 0;
     border-bottom: 1px solid #D3D3D3;
-    flex: 1;
 }
 
 .announcement:last-child {
@@ -250,6 +259,11 @@ li > img {
 
 .announcement .content {
     font-size: 0.6rem;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
 }
 
 .trends {
